@@ -50,3 +50,21 @@
 3. The receiver's public key is used for encryption.
 4. The receiver's private key is used for decryption.
 5. Signing provides authentication.
+
+# Part 5
+- The RSA-4096 key was created by multiplying large primes together and the Ed25519 key was
+  created using logarithms and elliptical curves, which do not grow in size as quickly as 
+  multiplication.
+- So even though RSA is much larger, it would take around the same amount of computation to
+  break them.
+
+# Part 6
+
+# Part 7
+### 7.1
+- I used ChatGPT and used the prompt "Write me a Python function that encrypts a file with AES."
+
+### 7.2
+- The code does not authenticate the sender. An attacker could pose as the sender and the
+  receiver wouldn't know. This violates the authenticity of the encryption.
+- 
