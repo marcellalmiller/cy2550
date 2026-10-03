@@ -67,4 +67,7 @@
 ### 7.2
 - The code does not authenticate the sender. An attacker could pose as the sender and the
   receiver wouldn't know. This violates the authenticity of the encryption.
-- 
+- The code does not prevent an attacker from modifying the file without the receiver knowing
+  because it isn't signed. This violates the integrity of the encryption.
+- The code does not prevent the author from claiming they sent the file. This violates the
+  non-repudiation of the encryption.
